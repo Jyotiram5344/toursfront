@@ -1,0 +1,130 @@
+/* Container Layout */
+.report-page-container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  overflow: hidden;
+  margin-left: 230px;
+  margin-top: 30px;
+}
+
+/* Right Side Content */
+.report-content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background-color: #f7f9fc;
+  box-sizing: border-box;
+}
+
+/* Page Title */
+.report-title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+/* Error Text */
+.report-error {
+  color: red;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Filters Row */
+.report-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 17px;
+  margin-bottom: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.report-filters label {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  color: #333;
+}
+
+/* Buttons */
+.report-button {
+  padding: 8px 14px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.report-button:hover {
+  background-color: #0056b3;
+}
+
+/* Table Wrapper */
+.report-table-wrapper {
+  overflow-x: auto;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Styling */
+.report-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+  min-width: 900px;
+}
+
+.report-table th,
+.report-table td {
+  padding: 8px 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.report-table th {
+  background-color: #e6f0ff;
+  font-weight: bold;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  .report-filters {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .report-button {
+    width: 100%;
+  }
+
+  .report-content {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .report-title {
+    font-size: 20px;
+  }
+
+  .report-table {
+    font-size: 11px;
+  }
+
+  .report-filters label {
+    width: 100%;
+  }
+}

@@ -1,0 +1,161 @@
+/* Container */
+.employeedetails-container {
+  padding: 20px;
+  margin-left: 250px;
+  padding-top: 80px;
+  background-color: #f3f4f6;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+/* Title */
+.employeedetails-title {
+  font-size: 24px;
+  color: #1f2937;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Table */
+.employeedetails-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.employeedetails-table th,
+.employeedetails-table td {
+  padding: 12px;
+  border: 1px solid #e5e7eb;
+  text-align: left;
+  font-size: 14px;
+}
+
+.employeedetails-table th {
+  background-color: #e2e8f0;
+  font-weight: 600;
+}
+
+.employeedetails-no-data {
+  text-align: center;
+  padding: 20px;
+  font-size: 16px;
+  color: #6b7280;
+}
+
+/* Buttons */
+.employeedetails-btn {
+  margin-right: 5px;
+  padding: 6px 12px;
+  font-size: 13px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.employeedetails-btn.view {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.employeedetails-btn.update {
+  background-color: #10b981;
+  color: white;
+}
+
+.employeedetails-btn.delete {
+  background-color: #ef4444;
+  color: white;
+}
+
+.employeedetails-btn.show,
+.employeedetails-btn.close {
+  margin-top: 10px;
+  background-color: #9ca3af;
+  color: white;
+}
+
+/* View & Form Box */
+.employeedetails-box {
+  background-color: #ffffff;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 700px;
+  margin: 30px auto;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+/* Form */
+.employeedetails-form label {
+  display: block;
+  margin-top: 12px;
+  font-weight: 500;
+  color: #374151;
+}
+
+.employeedetails-form input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.employeedetails-form-actions {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.employeedetails-btn.save {
+  background-color: #2563eb;
+  color: #ffffff;
+}
+
+.employeedetails-btn.cancel {
+  background-color: #9ca3af;
+  color: #ffffff;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .employeedetails-container {
+    margin-left: 0;
+    padding: 20px 15px;
+  }
+
+  .employeedetails-table th,
+  .employeedetails-table td {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  .employeedetails-btn {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .employeedetails-box {
+    padding: 15px;
+  }
+
+  .employeedetails-title {
+    font-size: 20px;
+  }
+
+  .employeedetails-form input {
+    font-size: 13px;
+  }
+
+  .employeedetails-btn.save,
+  .employeedetails-btn.cancel {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+}

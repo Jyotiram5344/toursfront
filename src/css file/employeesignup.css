@@ -1,0 +1,125 @@
+/* ==== RESET ==== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f1f5f9;
+}
+
+/* ==== MAIN LAYOUT ==== */
+.empsb-main {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+  padding-top: 60px; /* Space for fixed navbar */
+}
+
+.empsb-content {
+  flex: 1;
+  padding: 20px;
+}
+
+/* ==== SIGNUP CONTAINER ==== */
+.empsb-container {
+  max-width: 800px;
+  margin: auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.empsb-container h2 {
+  text-align: center;
+  color: #1e3a8a;
+  margin-bottom: 25px;
+}
+
+/* ==== FORM STYLING ==== */
+.empsb-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.empsb-form label {
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.empsb-form input {
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 15px;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.empsb-form input:focus {
+  border-color: #3b82f6;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+.empsb-form button {
+  padding: 12px;
+  background-color: #2563eb;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.empsb-form button:hover {
+  background-color: #1d4ed8;
+}
+
+/* ==== RESPONSIVE STYLES ==== */
+
+/* Tablets (up to 1024px) */
+@media screen and (max-width: 1024px) {
+  .empsb-container {
+    max-width: 90%;
+    padding: 25px;
+  }
+
+  .empsb-form input,
+  .empsb-form button {
+    font-size: 15px;
+  }
+}
+
+/* Mobiles (up to 768px) */
+@media screen and (max-width: 768px) {
+  .empsb-main {
+    flex-direction: column;
+    padding-top: 60px;
+  }
+
+  .empsb-content {
+    padding: 15px;
+  }
+
+  .empsb-container {
+    padding: 20px;
+    margin-top: 10px;
+  }
+
+  .empsb-form input,
+  .empsb-form button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .empsb-container h2 {
+    font-size: 20px;
+  }
+}

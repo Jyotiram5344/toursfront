@@ -1,0 +1,277 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.1rem;
+}
+p {
+  text-decoration: none;
+  color: black;
+  /* font-size: 1.1rem; */
+}
+
+a:hover {
+  background-color: rgb(103, 222, 151);
+}
+p:hover {
+  background-color: rgb(103, 222, 151);
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.first-container {
+  margin-top: 0;
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.back-box {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+}
+
+.first-main-box {
+  width: 100%;
+  position: relative;
+}
+
+/* ============ NAVBAR ============ */
+.navbar {
+  display: flex;
+  position: fixed;
+  top: 0;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  width: 100%;
+  padding: 0 20px;
+  background-color: rgb(197, 224, 247);
+  z-index: 1000;
+}
+
+.navbar-1 {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.navbar-2 {
+  display: flex;
+  gap: 15px;
+  font-size: 1rem;
+}
+.navbar-3 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+
+.navbar-3-1 {
+  height: 40px;
+  padding: 0 20px;
+  border-radius: 5px;
+  background-color: rgba(150, 187, 124, 1);
+  border: none;
+  color: white;
+  font-size: 1rem;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.droppbtn {
+  color: rgba(150, 187, 124, 1);
+  font-size: 1.3rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding-right: 50px;
+}
+
+.droppdown {
+  position: relative;
+}
+
+.droppdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 200px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  top: 100%;
+  z-index: 1;
+}
+
+.droppdown-content a {
+  padding: 10px 15px;
+  display: block;
+}
+
+.droppdown:hover .droppdown-content {
+  display: block;
+}
+
+/* ============ MAIN SECTION ============ */
+.main-contain {
+  min-height:97vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../../public/imp2.png);
+  background-size: cover;
+  background-position: center;
+  padding: 100px 20px 40px;
+  text-align: center;
+}
+
+.main-contain-2 {
+  font-size: 2.7rem;
+  font-weight: 800;
+  color: rgba(150, 187, 124, 1);
+  margin: 15px 0;
+}
+
+.main-contain-3 {
+  font-size: 1.3rem;
+  color: #0ba4e6;
+  max-width: 600px;
+  margin: 20px 0;
+}
+
+.main-contain-4 {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.main-contain-4-1,
+.main-contain-4-2 {
+  height: 45px;
+  padding: 0 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.main-contain-4-1 {
+  background-color: rgba(150, 187, 124, 1);
+  color: white;
+  border: none;
+}
+
+.main-contain-4-2 {
+  background-color: white;
+  color: rgba(150, 187, 124, 1);
+  border: 1px solid rgba(150, 187, 124, 1);
+}
+
+/* ============ FEATURES SECTION ============ */
+.Secondpagehome{
+    min-height:87vh;
+}
+.eigth-container {
+  padding: 50px 20px;
+  background-color: white;
+  text-align: center;
+ 
+
+}
+
+.eigth-main {
+  max-width: 1000px;
+  margin: 0 auto;
+   
+}
+
+.eigth-2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: rgba(37, 43, 66, 1);
+  margin-top: 20px;
+}
+
+.eigth-3 {
+  font-size: 1rem;
+  color: rgba(115, 115, 115, 1);
+  margin-top: 20px;
+}
+
+/* ============ FOOTER ============ */
+.last-container {
+  background-color: rgb(197, 224, 247);
+  padding: 40px 20px;
+  
+}
+
+.last-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: auto;
+  gap: 20px;
+}
+
+.last-box > div {
+  min-width: 150px;
+}
+
+b {
+  color: rgba(37, 43, 66, 1);
+  font-size: 1rem;
+}
+
+.last-box-1 {
+  font-size: 0.9rem;
+  color: rgba(115, 115, 115, 1);
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  .navbar-2 {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .navbar-3 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .main-contain-2 {
+    font-size: 2rem;
+    width: 90%;
+  }
+
+  .main-contain-3 {
+    font-size: 1rem;
+    width: 100%;
+  }
+
+  .last-box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

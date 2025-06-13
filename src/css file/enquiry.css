@@ -1,0 +1,93 @@
+.enquiry-page {
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+    
+}
+
+.enquiry-content {
+  flex: 1;
+  padding: 20px;
+  overflow-x: auto;
+  margin-left: 230px;
+}
+
+.enquiry-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.enquiry-filters input,
+.enquiry-filters select {
+  padding: 8px;
+  font-size: 14px;
+  width: 180px;
+  max-width: 100%;
+}
+
+.enquiry-table-container {
+  overflow-x: auto;
+  max-height: 70vh;
+  overflow-y: auto;
+}
+
+.enquiry-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.enquiry-table th,
+.enquiry-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.enquiry-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.enquiry-table td input {
+  width: 100%;
+  padding: 6px;
+  font-size: 13px;
+}
+
+.enquiry-table button {
+  padding: 6px 10px;
+  margin: 2px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.no-data {
+  text-align: center;
+  font-weight: bold;
+  color: red;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .enquiry-filters {
+    flex-direction: column;
+  }
+
+  .enquiry-filters input,
+  .enquiry-filters select {
+    width: 100%;
+  }
+
+  .enquiry-table {
+    font-size: 12px;
+  }
+
+  .enquiry-table th,
+  .enquiry-table td {
+    padding: 6px;
+  }
+}

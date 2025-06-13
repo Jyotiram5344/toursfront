@@ -1,0 +1,159 @@
+/* AdminDetails Component Styles */
+
+.admindetails-container {
+  padding: 20px;
+  background-color: #f8fafc;
+  margin-left: 250px;
+  padding-top: 80px;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.admindetails-title {
+  font-size: 24px;
+  color: #1e3a8a;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.admindetails-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  box-shadow: 0 0 8px rgba(0,0,0,0.05);
+  margin-bottom: 30px;
+}
+
+.admindetails-table th,
+.admindetails-table td {
+  border: 1px solid #e5e7eb;
+  padding: 12px 14px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.admindetails-table th {
+  background-color: #f1f5f9;
+  font-weight: 600;
+}
+
+.admindetails-btn {
+  margin-right: 5px;
+  padding: 6px 12px;
+  font-size: 13px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.admindetails-btn.view {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.admindetails-btn.update {
+  background-color: #10b981;
+  color: white;
+}
+
+.admindetails-btn.delete {
+  background-color: #ef4444;
+  color: white;
+}
+
+.admindetails-box {
+  background-color: #ffffff;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 700px;
+  margin: auto;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+.admindetails-box h3 {
+  color: #1e3a8a;
+  margin-bottom: 15px;
+}
+
+.admindetails-form label {
+  display: block;
+  margin-top: 12px;
+  font-weight: 500;
+  color: #374151;
+}
+
+.admindetails-form input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.admindetails-form-actions {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.admindetails-btn-save {
+  background-color: #2563eb;
+  color: #ffffff;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.admindetails-btn-cancel,
+.admindetails-btn-close {
+  background-color: #9ca3af;
+  color: #ffffff;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .admindetails-container {
+    margin-left: 0;
+    padding: 20px 15px;
+  }
+
+  .admindetails-table th,
+  .admindetails-table td {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  .admindetails-btn {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .admindetails-box {
+    padding: 15px;
+  }
+
+  .admindetails-title {
+    font-size: 20px;
+  }
+
+  .admindetails-form input {
+    font-size: 13px;
+  }
+
+  .admindetails-btn-save,
+  .admindetails-btn-cancel {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+}

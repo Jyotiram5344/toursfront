@@ -1,0 +1,234 @@
+/* ===== NAVBAR (Top Header) ===== */
+.sidebar-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 50px;
+  width: 100%;
+  background-color: aliceblue;
+  color: #090707;
+  border-bottom: 2px solid #360ab9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 1000;
+}
+
+.sidebar-logo h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.sidebar-logout-btn {
+  font-size: 90%;
+  font-weight: 700;
+  height: 35px;
+  width: 80px;
+  border-radius: 5px;
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.sidebar-logout-btn:hover {
+  background-color: darkred;
+  transform: scale(1.05);
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar-navigation {
+  width: 230px;
+  height: calc(100vh - 50px);
+  background-color: aliceblue;
+  position: fixed;
+  top: 50px;
+  left: 0;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar-navigation a {
+  padding: 15px 20px;
+  margin: 6px 10px;
+  text-decoration: none;
+  background-color: #e3f1fd;
+  color: #151010;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+.sidebar-navigation a:hover {
+  background-color: #b3cce1;
+  padding-left: 25px;
+}
+
+/* ========== Responsive Design ========== */
+
+/* 📱 Mobile */
+@media (max-width: 480px) {
+  .sidebar-navigation {
+    width: 180px;
+  }
+
+  .sidebar-logo h2 {
+    font-size: 16px;
+  }
+
+  .sidebar-navigation a {
+    font-size: 16px;
+    padding: 12px 16px;
+  }
+
+  .sidebar-logout-btn {
+    font-size: 14px;
+    height: 32px;
+    width: 70px;
+  }
+}
+
+/* 📲 Tablet */
+@media (min-width: 481px) and (max-width: 768px) {
+  .sidebar-navigation {
+    width: 200px;
+  }
+
+  .sidebar-navigation a {
+    font-size: 17px;
+  }
+}
+
+/* 💻 Small Laptops */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .sidebar-navigation {
+    width: 220px;
+  }
+}
+
+/* 🖥 Desktops */
+@media (min-width: 1025px) {
+  .sidebar-navigation {
+    width: 230px;
+  }
+}
+/* ===== NAVBAR (Top Header) ===== */
+.sidebar-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 50px;
+  width: 100%;
+  background-color: aliceblue;
+  color: #090707;
+  border-bottom: 2px solid #360ab9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 1000;
+}
+
+/* ===== SIDEBAR TOGGLE ARROW ===== */
+.sidebar-toggle {
+  position: fixed;
+  top: 60px;
+  left: 230px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  padding: 6px 10px;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  z-index: 1100;
+  transition: left 0.3s;
+}
+
+.sidebar-wrapper.collapsed .sidebar-toggle {
+  left: 0px;
+  border-radius: 0 5px 5px 0;
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar-navigation {
+  width: 230px;
+  height: calc(100vh - 50px);
+  background-color: aliceblue;
+  position: fixed;
+  top: 50px;
+  left: 0;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.sidebar-wrapper.collapsed .sidebar-navigation {
+  transform: translateX(-100%);
+}
+
+.sidebar-navigation a {
+  padding: 15px 20px;
+  margin: 6px 10px;
+  text-decoration: none;
+  background-color: #e3f1fd;
+  color: #151010;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+.sidebar-navigation a:hover {
+  background-color: #b3cce1;
+  padding-left: 25px;
+}
+
+/* ===== LOGO AND LOGOUT BUTTON ===== */
+.sidebar-logo h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.sidebar-logout-btn {
+  font-size: 90%;
+  font-weight: 700;
+  height: 35px;
+  width: 80px;
+  border-radius: 5px;
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.sidebar-logout-btn:hover {
+  background-color: darkred;
+  transform: scale(1.05);
+}
+
+/* ========== Responsive ========== */
+@media (max-width: 768px) {
+  .sidebar-navigation {
+    width: 180px;
+  }
+
+  .sidebar-toggle {
+    left: 180px;
+  }
+
+  .sidebar-wrapper.collapsed .sidebar-toggle {
+    left: 0;
+  }
+
+  .sidebar-navigation a {
+    font-size: 16px;
+  }
+}

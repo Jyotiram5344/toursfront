@@ -1,0 +1,151 @@
+/* ==== RESET & BASE ==== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ==== WRAPPER ==== */
+.adminsb-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ==== NAVBAR ==== */
+.adminsb-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #1e3a8a;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.adminsb-brand {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.adminsb-signout {
+  font-size: 14px;
+  padding: 8px 16px;
+  background-color: #ef4444;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.adminsb-signout:hover {
+  background-color: #dc2626;
+  transform: scale(1.05);
+}
+
+/* ==== SIDEBAR ==== */
+.adminsb-sidebar {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  width: 250px;
+  height: 100vh;
+  background: linear-gradient(to bottom, #f0f9ff, #e0f2fe);
+  padding-top: 20px;
+  overflow-y: auto;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.adminsb-menu {
+  list-style: none;
+  padding: 0 15px;
+}
+
+.adminsb-menu li {
+  margin-bottom: 15px;
+}
+
+.adminsb-menu li a {
+  display: block;
+  padding: 10px;
+  background-color: #e2e8f0;
+  color: #1e293b;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.adminsb-menu li a:hover {
+  background-color: #93c5fd;
+  color: #1e3a8a;
+  padding-left: 20px;
+  font-weight: 600;
+}
+
+/* ==== RESPONSIVE ==== */
+
+/* Tablets */
+@media screen and (max-width: 1024px) {
+  .adminsb-sidebar {
+    width: 200px;
+  }
+
+  .adminsb-menu li a {
+    font-size: 15px;
+  }
+
+  .adminsb-navbar {
+    padding: 0 15px;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+  .adminsb-sidebar {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    top: 60px;
+    left: 0;
+    flex-direction: row;
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    background-color: #f8fafc;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+
+  .adminsb-menu {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+  }
+
+  .adminsb-menu li {
+    margin: 0 10px;
+  }
+
+  .adminsb-menu li a {
+    font-size: 14px;
+    padding: 6px 10px;
+    white-space: nowrap;
+  }
+
+  .adminsb-signout {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+}

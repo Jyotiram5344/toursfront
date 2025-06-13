@@ -1,0 +1,122 @@
+/* Container and Title */
+.admin-enquiry-container {
+  padding: 20px;
+  margin-left: 250px;
+  background-color: #f5f7fa;
+  min-height: 100vh;
+  margin-top: 40px;
+}
+
+.admin-enquiry-title {
+  text-align: center;
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Table Styling */
+.admin-enquiry-table-wrapper {
+  overflow-x: auto;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.admin-enquiry-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.admin-enquiry-table th,
+.admin-enquiry-table td {
+  border: 1px solid #ddd;
+  padding: 8px 10px;
+  font-size: 14px;
+  text-align: left;
+}
+
+.admin-enquiry-table th {
+  background-color: #007bff;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+/* Input Styling */
+.admin-enquiry-input {
+  width: 100%;
+  padding: 5px 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* Buttons */
+.admin-enquiry-btn {
+  padding: 6px 10px;
+  margin: 2px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.admin-enquiry-btn.edit {
+  background-color: #ffc107;
+  color: #000;
+}
+
+.admin-enquiry-btn.save {
+  background-color: #28a745;
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .admin-enquiry-container {
+    margin-left: 0;
+    padding: 15px;
+  }
+
+  .admin-enquiry-title {
+    font-size: 24px;
+  }
+
+  .admin-enquiry-table th,
+  .admin-enquiry-table td {
+    font-size: 13px;
+    padding: 6px;
+  }
+}
+
+@media (max-width: 768px) {
+  .admin-enquiry-title {
+    font-size: 20px;
+  }
+
+  .admin-enquiry-input {
+    font-size: 12px;
+  }
+
+  .admin-enquiry-btn {
+    padding: 4px 8px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .admin-enquiry-title {
+    font-size: 18px;
+  }
+
+  .admin-enquiry-table-wrapper {
+    overflow-x: scroll;
+  }
+
+  .admin-enquiry-btn {
+    display: block;
+    margin: 4px 0;
+    width: 100%;
+  }
+}

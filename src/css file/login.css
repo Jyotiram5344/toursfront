@@ -1,0 +1,245 @@
+/* ===== Login Wrapper ===== */
+.login-page-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;              /* Full viewport height */
+  width: 100%;
+  background-color: #f0f2f5;
+  padding: 20px;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+/* ===== Login Container ===== */
+.login-page-container {
+  width: 100%;
+  max-width: 450px;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+/* ===== Heading ===== */
+.login-page-container h2 {
+  font-size: 26px;
+  color: #222;
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+
+/* ===== Labels ===== */
+.login-page-container label {
+  display: block;
+  font-size: 15px;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 6px;
+  text-align: left;
+}
+
+/* ===== Inputs ===== */
+.login-page-container input {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 18px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: all 0.2s ease;
+  outline: none;
+}
+
+.login-page-container input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+
+/* ===== Submit Button ===== */
+.login-page-button {
+  width: 100%;
+  padding: 14px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.1s;
+}
+
+.login-page-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.02);
+}
+
+/* ===== Responsive Media Queries ===== */
+
+/* 📱 Mobile */
+@media (max-width: 480px) {
+  .login-page-container {
+    padding: 20px;
+  }
+
+  .login-page-container h2 {
+    font-size: 22px;
+  }
+
+  .login-page-button {
+    font-size: 16px;
+    padding: 12px;
+  }
+}
+
+/* 📲 Tablet */
+@media (min-width: 481px) and (max-width: 768px) {
+  .login-page-container {
+    max-width: 400px;
+    padding: 25px;
+  }
+
+  .login-page-container h2 {
+    font-size: 24px;
+  }
+}
+
+/* 💻 Small Laptop */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .login-page-container {
+    max-width: 480px;
+    padding: 30px;
+  }
+}
+
+/* 🖥 Desktop */
+@media (min-width: 1025px) {
+  .login-page-container {
+    max-width: 500px;
+    padding: 40px;
+  }
+}
+/* admon css file */
+
+/* ===== Admin Login Wrapper ===== */
+.admin-dashboard-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f2f5;
+  padding: 20px;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+/* ===== Inner Content Area ===== */
+.admin-dashboard-content {
+  width: 100%;
+  max-width: 450px;
+}
+
+/* ===== Form Container ===== */
+.signup-container {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+/* ===== Heading ===== */
+.signup-container h2 {
+  font-size: 26px;
+  color: #222;
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+
+/* ===== Form ===== */
+.signup-form label {
+  display: block;
+  font-size: 15px;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 6px;
+  text-align: left;
+}
+
+.signup-form input {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 18px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: all 0.2s ease;
+  outline: none;
+}
+
+.signup-form input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+
+/* ===== Submit Button ===== */
+.signup-form button {
+  width: 100%;
+  padding: 14px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.1s;
+}
+
+.signup-form button:hover {
+  background-color: #0056b3;
+  transform: scale(1.02);
+}
+
+/* ===== Responsive Breakpoints ===== */
+
+/* 📱 Mobile */
+@media (max-width: 480px) {
+  .signup-container {
+    padding: 20px;
+  }
+
+  .signup-container h2 {
+    font-size: 22px;
+  }
+
+  .signup-form button {
+    font-size: 16px;
+    padding: 12px;
+  }
+}
+
+/* 📲 Tablet */
+@media (min-width: 481px) and (max-width: 768px) {
+  .admin-dashboard-content {
+    max-width: 400px;
+  }
+
+  .signup-container h2 {
+    font-size: 24px;
+  }
+}
+
+/* 💻 Small Laptop */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .admin-dashboard-content {
+    max-width: 480px;
+  }
+}
+
+/* 🖥 Desktop */
+@media (min-width: 1025px) {
+  .admin-dashboard-content {
+    max-width: 500px;
+  }
+}
