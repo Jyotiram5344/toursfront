@@ -25,7 +25,7 @@ function AdminLogin() {
 
     try {
       const response = await axios.post(
-        "https://tours-backend-xlbv.onrender.com", // ✅ ensure correct backend endpoint
+        "https://tours-backend-xlbv.onrender.com/api/admin-login", // ✅ ensure correct backend endpoint
         formData
       );
 
